@@ -35,6 +35,6 @@ This repository documents my completed academic coursework during my studies in 
 ## **Semester 4**
 - **Algorithms and Data Structures** 
 - **Computer Systems** 
-- **Probability Theory and Statistics** 
+- [**Probability Theory and Statistics**](https://github.com/kornelorawczak/University-Overview/tree/main/Probability%20Theory%20and%20Statistics) 
 - **Intellectual Property Protection** 
 - **Unreal Engine 5 Development**
