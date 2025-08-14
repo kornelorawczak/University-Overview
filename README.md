@@ -1,8 +1,7 @@
 # Academic Coursework Overview
 
-This repository documents my completed academic coursework during my studies in Computer Science at Uniwersytet Wrocławski (2023 - present)  
-The following list is organized by semester and includes both core theoretical subjects and specialized practical courses.  
-Course titles have been translated and expanded to reflect their full academic scope.
+This repository documents my completed academic coursework during my studies in Computer Science at Uniwersytet Wrocławski (2023 - present). The following list is organized by semester and includes both core theoretical subjects and specialized practical courses.  
+
 
 ---
 
