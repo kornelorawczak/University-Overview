@@ -9,16 +9,16 @@ This repository documents my completed academic coursework during my studies in 
 - **Mathematical Analysis** 
 - **Logic for Computer Scientists** 
 - **Introduction to Computer Science** 
-- **Advanced Python Programming Course** 
+- [**Advanced Python Programming Course**](https://github.com/kornelorawczak/Advanced-Python-Course) 
 - **Foundations of Computer Engineering Workshop** 
 
 ---
 
 ## **Semester 2**
 - **Abstract Algebra** 
-- **Programming Methodologies** 
-- **Object-Oriented Programming** 
-- **C++ Advanced Programming Course** 
+- [**Programming Methodologies**](https://github.com/kornelorawczak/Advanced-Ocaml-Course)
+- [**Object-Oriented Programming**](https://github.com/kornelorawczak/OOP-Course) 
+- [**C++ Advanced Programming Course**](https://github.com/kornelorawczak/Advanced-CPP-Course) 
 - **Space Policy and Governance** 
 
 ---
