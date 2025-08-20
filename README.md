@@ -33,7 +33,7 @@ This repository documents my completed academic coursework during my studies in 
 ---
 
 ## **Semester 4**
-- [**Algorithms and Data Structures**](https://github.com/kornelorawczak/University-Overview/tree/main/Algorithms%20and%20Data%20Structures) (Apart from numerous theoritical problems solved during this course, I've put 4 bigger algorithmic problems I solved using C++, learning to construct and implement complicated algorithms solving each of these problems and passing all tests) 
+- [**Algorithms and Data Structures**](https://github.com/kornelorawczak/University-Overview/tree/main/Algorithms%20and%20Data%20Structures) (Apart from numerous theoritical problems solved during this course, I've put 4 bigger algorithmic tasks I completed using C++, learning to construct and implement complicated algorithms solving each of these problems and passing all tests) 
 - [**Computer Systems**](https://github.com/kornelorawczak/University-Overview/tree/main/Computer%20Systems) 
 - [**Probability Theory and Statistics**](https://github.com/kornelorawczak/University-Overview/tree/main/Probability%20Theory%20and%20Statistics) 
 - **Intellectual Property Protection** 
