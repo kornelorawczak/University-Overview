@@ -1,0 +1,3 @@
+/Users/kornelorawczak/Documents/studia/sem3/analiza_numeryczna/lista2/cmake-build-debug/CMakeFiles/lista2.dir
+/Users/kornelorawczak/Documents/studia/sem3/analiza_numeryczna/lista2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kornelorawczak/Documents/studia/sem3/analiza_numeryczna/lista2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

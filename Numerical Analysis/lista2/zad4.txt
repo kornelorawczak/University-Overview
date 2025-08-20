@@ -1,0 +1,8 @@
+25 lutego 1991 podczas wojny w zatoce Perskiej, Amerykański system rakietowy nie zdołał 
+przechwycić rakiety Iraku, która zabiła 28 żołnierzy USA i raniła ponad 100 kolejnych.
+Okazało się że powodem tego błędu było złe określenie czasu wewnętrznego komputera sterującego
+rakietami, który domnażany był przez 1/10 zapisane na 24 bitach. Jako że 1/10 nie da się 
+dokładnie zapisać w systemie dziesiętnym, rozwinięcie zostało ucięte po 24 bitach doprowadzając
+do sporego błędu. Dokładnie dla czasu działania 100 godzin systemu rakietowego, błąd wynosił 
+aż 0.34 sekundy. Rakiety "Scud" podróżują w czasie ponad 1600 m/s więc w tym czasie są w stanie
+przebyć około pół kilometra.
