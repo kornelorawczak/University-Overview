@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Wywołanie szablonu option:
+    <div>
+        <%- include('select', {
+            name: 'combo1',
+            options: [
+                { value : 1, text : 'element 1' },
+                { value : 2, text : 'element 2' },
+                { value : 3, text : 'element 3' }
+            ]
+            }) %>
+    </div> 
+    Wywołanie szablonu radio: 
+    <div>
+        <%- include('radio', {
+            name: 'radio1',
+            options: [
+                { value : 1, text : 'option 1' },
+                { value : 2, text : 'option 2' },
+                { value : 3, text : 'option 3' }
+            ]
+            }) %>
+    </div>
+    Wywołanie szablonu checkbox: 
+    <div>
+        <%- include('checkbox', {
+            name: 'cb1',
+            options: [
+                { value : 1, text : 'option 1' },
+                { value : 2, text : 'option 2' },
+                { value : 3, text : 'option 3' }
+            ]
+            }) %>
+    </div>
+</body>
+</html>

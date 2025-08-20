@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Kontener sesji przechowuje: <%= sessionValue %>
+    </div>
+    <form action="/set-session" method="GET">
+        <button type="submit">Ustaw wartość kontenera</button>
+    </form>
+    
+    <form action="/delete-session" method="GET">
+        <button type="submit">Usuń wartość z kontenera</button>
+    </form>
+
+
+</body>
+</html>

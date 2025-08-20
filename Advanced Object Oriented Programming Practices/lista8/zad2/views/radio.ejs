@@ -1,0 +1,9 @@
+<!-- radio.ejs -->
+<% options.forEach(option => { %>
+      <input 
+        type="radio" 
+        name="<%= name %>" 
+        value="<%= option.value %>" />
+      <%= option.text %>
+<% }) %>
+  

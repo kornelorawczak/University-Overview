@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    Ciastko: <%= cookieValue %>
+    </div>
+    <form action="/set-cookie" method="POST">
+        <button type="submit">Ustaw ciasteczko</button>
+    </form>
+    
+    <form action="/delete-cookie" method="POST">
+        <button type="submit">Usuń ciasteczko</button>
+    </form>
+    <div>
+        Kontener sesji przechowuje: <%= sessionValue %>
+    </div>
+    <form action="/set-session" method="GET">
+        <button type="submit">Ustaw wartość kontenera</button>
+    </form>
+    
+    <form action="/delete-session" method="GET">
+        <button type="submit">Usuń wartość z kontenera</button>
+    </form>
+
+
+</body>
+</html>
