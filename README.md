@@ -10,7 +10,7 @@ This repository documents my completed academic coursework during my studies in 
 - **Logic for Computer Scientists** 
 - **Introduction to Computer Science** 
 - [**Advanced Python Programming Course**](https://github.com/kornelorawczak/Advanced-Python-Course) 
-- **Foundations of Computer Engineering Workshop** 
+- [**Foundations of Computer Engineering Workshop**](https://github.com/kornelorawczak/PyGame-Group-Project) 
 
 ---
 
