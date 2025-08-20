@@ -26,8 +26,8 @@ This repository documents my completed academic coursework during my studies in 
 ## **Semester 3**
 - [**Numerical Analysis**](https://github.com/kornelorawczak/University-Overview/tree/main/Numerical%20Analysis) (Apart from various smaller tasks done in both python and c++, this folder also contains a larger [project](https://github.com/kornelorawczak/University-Overview/tree/main/Numerical%20Analysis/konkurs1) which uses python to build my own tool to interpolate manually very complex structures - f.e handwriting with extreme precision to just 2D points and then builds the structure itself using polynomials - NIFS3)
 - **Discrete Mathematics** 
-- **Game Development in Unity** 
-- **Advanced Object-Oriented Programming Practices** 
+- [**Game Development in Unity**](https://github.com/kornelorawczak/Unity-Advanced-Course) 
+- [**Advanced Object-Oriented Programming Practices**](https://github.com/kornelorawczak/University-Overview/tree/main/Advanced%20Object%20Oriented%20Programming%20Practices) 
 - **Financial Services and Markets** 
 
 ---
