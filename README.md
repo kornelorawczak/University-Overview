@@ -42,9 +42,9 @@ This repository documents my completed academic coursework during my studies in 
 ---
 
 ## **Semester 5**
-- **Machine Learning**
+- [**Machine Learning**](https://github.com/kornelorawczak/Machine-Learning-University)
 - **AI Security Seminar**
 - **AI Workshop**
-- **Group Project: Scheduler Development**
-- **Computer Graphics Course**
-- **Databases in Applications**
+- **Group Project: Scheduler Development** (This project is ongoing - the repository is as of now private)
+- [**Computer Graphics Course**](https://github.com/kornelorawczak/Computer-Graphics-Course)
+- [**Databases in Applications**](https://github.com/kornelorawczak/University-Overview/tree/main/Database%20Applications)
