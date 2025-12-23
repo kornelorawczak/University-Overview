@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EShop.Application/EShop.Application.csproj" />
+    <Project Path="src/EShop.Domain/EShop.Domain.csproj" />
+    <Project Path="src/EShop.Infrastructure/EShop.Infrastructure.csproj" />
+    <Project Path="src/EShop.Shared/EShop.Shared.csproj" />
+    <Project Path="src/EShop.Web/EShop.Web.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ra+W51uuk58=",
+  "success": true,
+  "projectFilePath": "D:\\studia uwr\\sem5\\DBcourse\\lista7\\zad5\\Neo4jZad5\\Neo4jZad5.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kornel\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kornel\\.nuget\\packages\\neo4j.driver\\5.18.0\\neo4j.driver.5.18.0.nupkg.sha512",
+    "C:\\Users\\Kornel\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
+    "C:\\Users\\Kornel\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

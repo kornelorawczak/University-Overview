@@ -1,0 +1,15 @@
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/bin/Debug/net10.0/EShop.Domain.deps.json
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/bin/Debug/net10.0/EShop.Domain.dll
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/bin/Debug/net10.0/EShop.Domain.pdb
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/bin/Debug/net10.0/EShop.Shared.dll
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/bin/Debug/net10.0/EShop.Shared.pdb
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/obj/Debug/net10.0/EShop.Domain.csproj.AssemblyReference.cache
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/obj/Debug/net10.0/EShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/obj/Debug/net10.0/EShop.Domain.AssemblyInfoInputs.cache
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/obj/Debug/net10.0/EShop.Domain.AssemblyInfo.cs
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/obj/Debug/net10.0/EShop.Domain.csproj.CoreCompileInputs.cache
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/obj/Debug/net10.0/EShop.Do.3250E316.Up2Date
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/obj/Debug/net10.0/EShop.Domain.dll
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/obj/Debug/net10.0/refint/EShop.Domain.dll
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/obj/Debug/net10.0/EShop.Domain.pdb
+/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Domain/obj/Debug/net10.0/ref/EShop.Domain.dll

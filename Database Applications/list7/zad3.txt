@@ -1,0 +1,28 @@
+Prepare the following queries
+• return the movies where person A acted in,
+MATCH (p:Person {name: 'Tom Cruise'})-[:ACTED_IN]->(m:Movie)
+RETURN p.name AS Actor, m.title AS Movie, m.released AS Year
+
+• return the movies where person A was both the actor and the director,
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)<-[:DIRECTED]-(p)
+RETURN p.name AS Person, m.title AS Movie, m.released AS Year
+
+• return actors who didn’t play in any movie,
+MATCH (p:Person)
+WHERE NOT EXISTS((p)-[:ACTED_IN]->(:Movie))
+RETURN p.name AS Actor, p.born AS Born
+ORDER BY p.name
+
+• return actors who played in more than 2 movies,
+MATCH (actor)-[:ACTED_IN]->(movie)
+WITH actor, COUNT(movie) AS movie_count
+WHERE movie_count > 2
+RETURN actor.name AS Actor, movie_count AS NumberOfMovies
+ORDER BY movie_count DESC, actor.name
+
+• return movies with the larger number of actors.
+MATCH (movie)<-[:ACTED_IN]-(actor)
+WITH movie, COUNT(actor) AS actor_count
+RETURN movie.title AS Movie, actor_count AS NumberOfActors
+ORDER BY actor_count DESC
+LIMIT 5

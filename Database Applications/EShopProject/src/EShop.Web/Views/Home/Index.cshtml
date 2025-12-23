@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    
+</div>
+@model IEnumerable<EShop.Domain.Products.Product>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container py-4">
+    <h3 class="mb-4">Recommended Offers</h3>
+    
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <article class="product-card">
+                    <a href="@Url.Action("Details", new { id = item.Id })" class="text-decoration-none">
+                        <img src="https://placehold.co/400x300/EEE/31343C?text=@item.Name.Substring(0,1)" class="card-img-top" alt="@item.Name">
+                    </a>
+                    
+                    <div class="card-body">
+                        <a href="@Url.Action("Details", new { id = item.Id })" class="product-title">
+                            @item.Name
+                        </a>
+                        
+                        @if(item.Tags != null && item.Tags.Any())
+                        {
+                            <div class="mb-2">
+                                @foreach(var tag in item.Tags)
+                                {
+                                    <span class="badge bg-secondary" style="font-size: 0.7em;">@tag</span>
+                                }
+                            </div>
+                        }
+
+                        <div class="product-price">
+                            @item.Price.Amount <span class="currency">@item.Price.Currency</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        }
+    </div>
+</div>

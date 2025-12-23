@@ -1,0 +1,76 @@
+@model EShop.Domain.Products.Product
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="container py-4">
+    <nav aria-label="breadcrumb" class="mb-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index")" class="text-decoration-none text-muted">Home Page</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted">Electronics</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+        </ol>
+    </nav>
+
+    <div class="details-container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="border rounded p-2">
+                     <img src="https://placehold.co/600x600/EEE/31343C?text=@Model.Name" class="img-fluid" alt="@Model.Name">
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <h1 class="h2 mb-2">@Model.Name</h1>
+                
+                <div class="text-muted mb-3 small">
+                    Product Code: @Model.SKU
+                </div>
+
+                @if(Model.Tags != null && Model.Tags.Any())
+                {
+                    <div class="mb-3">
+                        @foreach(var tag in Model.Tags)
+                        {
+                            <span class="badge bg-light text-dark border me-1">@tag</span>
+                        }
+                    </div>
+                }
+
+                <hr class="my-4">
+
+                <div class="mb-4">
+                    <span class="small text-muted d-block">Price brutto</span>
+                    <span class="display-5 fw-bold text-dark" style="color: #222;">@Model.Price.Amount</span>
+                    <span class="h4 ms-1 text-muted">@Model.Price.Currency</span>
+                </div>
+
+                <div class="card border-0 bg-light p-3">
+                    <div class="row g-2 align-items-end">
+                        <div class="col-md-3">
+                            <label class="form-label small text-muted">Available items</label>
+                            <input type="number" class="form-control" value="1" min="1">
+                        </div>
+                        <div class="col-md-9">
+                            <button class="btn btn-shop-primary btn-lg w-100">
+                                <i class="bi bi-cart-fill me-2"></i> ADD TO BASKET
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-2 text-success small">
+                        <i class="bi bi-check-circle-fill"></i> Delivery right away
+                    </div>
+                    <div class="mt-1 text-muted small">
+                        <i class="bi bi-truck"></i> At your door tommorow
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <h4 class="mb-3 border-bottom pb-2">Product Details</h4>
+                    <p class="lead" style="font-size: 1rem; color: #444;">@Model.Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

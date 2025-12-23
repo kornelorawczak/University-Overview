@@ -1,0 +1,14 @@
+Lets imagine that there are two users trying to buy the last one copy of a book from an 
+online shop. 
+
+Pessimistic Concurrency Control - basically it assumes that conflicts can happen, 
+so it prevents it 
+
+When the first user adds the book to the basket, his transaction is in progress. Even when he
+still thinks about buying it, the second user won't be able to see the book in the list 
+of available products, until the first user ends his transaction 
+
+Optimistic Concurrency Control - assume that conflicts are rare, so handle them when they occur
+
+Both users can take a look and add the book to the basket, but only the first one to click
+"Order" can actually get the book. The second one would get an error "this is already sold out"

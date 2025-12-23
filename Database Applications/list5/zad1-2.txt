@@ -1,0 +1,103 @@
+Original table:
+- ID - 1; 2
+- Patient - Jan Kot; Maria Mysz 
+- Patient Address - 6 Dolna Street, 44-444 Bór; 9 Górna Street, 55-555 Las
+- Appointment time and location - 2029-02-01 12:30, room 12; 2030-01-04 11:45, room 7
+- Price - 300 zł; 150 zł
+- Physician - Oleg Wyrwiząb; Ewa Pieprzyk
+- Appointment cause - Dental: Denture fitting in (...); Dermatology: Birthmark insepction (...)
+
+1NF:
+- ID - 1; 2
+- PatientName - Jan Kot; Maria Mysz
+- Street - 6 Dolna Street; 9 Górna Street
+- PostalCode - 44-444; 55-555
+- City - Bór; Las
+- AppointmentDate - 2029-02-01; 2030-01-04 
+- AppointmentTime - 12:30; 11:45
+- Room - 12; 7
+- Price - 300 zł; 150zł
+- PhysicianName - Oleg Wyrwiząb; Ewa Pieprzyk
+- AppointmentCauseCategory - Dental; Dermatology
+- AppointmentCauseDescription - Denture fitting in (...); Birthmark insepction (...)
+
+2NF:
+PATIENT:
+    - PatientID - 1; 2
+    - PatientName - Jan Kot; Maria Mysz
+    - Street - 6 Dolna Street; 9 Górna Street
+    - PostalCode - 44-444; 55-555
+    - City - Bór; Las
+APPOINTMENT: 
+    - AppointmentID - 1; 2
+    - PatientID - 1; 2 (FK)
+    - AppointmentDate - 2029-02-01; 2030-01-04
+    - AppointmentTime - 12:30; 11:45
+    - Room - 12; 7
+    - Price - 300 zł; 150zł
+    - PhysicianID (FK) - 1; 2
+    - AppointmentCauseCategory - Dental; Dermatology
+    - AppointmentCauseDescription - Denture fitting in (...); Birthmark insepction (...)
+PHYSICIAN:
+    - PhysicianID (PK) - 1; 2
+    - Name - Oleg Wyrwiząb; Ewa Pieprzyk
+
+3NF:
+PATIENT:
+    - PatientID (PK): 1; 2
+    - Name: Jan Kot; Maria Mysz
+
+ADDRESS:
+    - AddressID (PK) - 1; 2
+    - PatientID (FK) - 1; 2
+    - Street - 6 Dolna Street; 9 Górna Street
+    - PostalCode - 44-444; 55-555
+    - City - Bór; Las
+
+PHYSICIAN:
+    - PhysicianID (PK) - 1; 2
+    - Name - Oleg Wyrwiząb; Ewa Pieprzyk
+
+APPOINTMENT_CAUSE:
+    - CauseID (PK) - 1; 2
+    - Category - Dental; Dermatology
+    - Description - Denture fitting in (...); Birthmark insepction (...)
+
+APPOINTMENT:
+    - AppointmentID (PK) - 1; 2
+    - PatientID (FK) - 1; 2
+    - PhysicianID (FK) - 1; 2
+    - CauseID (FK) - 1; 2
+    - AppointmentDate - 2029-02-01; 2030-01-04
+    - AppointmentTime - 12:30; 11:45
+    - Room - 12; 7
+    - Price - 300zł; 150 zł
+
+
+ZADANIE 2 ------------------
+We could move address back to the patient 
+PATIENT:
+    - PatientID (PK): 1; 2
+    - Name: Jan Kot; Maria Mysz
+    - Street - 6 Dolna Street; 9 Górna Street
+    - PostalCode - 44-444; 55-555
+    - City - Bór; Las
+
+PHYSICIAN:
+    - PhysicianID (PK) - 1; 2
+    - Name - Oleg Wyrwiząb; Ewa Pieprzyk
+
+APPOINTMENT_CAUSE:
+    - CauseID (PK) - 1; 2
+    - Category - Dental; Dermatology
+    - Description - Denture fitting in (...); Birthmark insepction (...)
+
+APPOINTMENT:
+    - AppointmentID (PK) - 1; 2
+    - PatientID (FK) - 1; 2
+    - PhysicianID (FK) - 1; 2
+    - CauseID (FK) - 1; 2
+    - AppointmentDate - 2029-02-01; 2030-01-04
+    - AppointmentTime - 12:30; 11:45
+    - Room - 12; 7
+    - Price - 300zł; 150 zł

@@ -1,0 +1,6 @@
+ACID stands for:
+ - Atomicity - meaning that a transaction has to be completed entirely or not at all, f.e 
+ if it fails to execute in the middle of the process, it should be rolled back
+ - Consistency - transaction has to maintain all the triggers, rules and a valid state of the data base
+ - Isolation - Each transaction has to be independent and not interfere with another
+ - Durability - once a transaction is completed, its changes should remain permament

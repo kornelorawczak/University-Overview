@@ -1,0 +1,59 @@
+@model IEnumerable<EShop.Domain.Products.Product>
+
+@{
+    ViewData["Title"] = "Manager Panel";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Product Management</h2>
+        <a asp-action="Create" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Add New Product
+        </a>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body p-0">
+            <table class="table table-hover mb-0">
+                <thead class="bg-light">
+                    <tr>
+                        <th>SKU</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.SKU</td>
+                            <td>
+                                <strong>@item.Name</strong>
+                                @if(item.Tags != null && item.Tags.Any())
+                                {
+                                    <br/>
+                                    <small class="text-muted">Tags: @string.Join(", ", item.Tags)</small>
+                                }
+                            </td>
+                            <td>@item.Price.Amount @item.Price.Currency</td>
+                            <td>
+                                <span class="badge bg-primary">@item.Status</span>
+                            </td>
+                            <td class="text-end">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">
+                                    Edit
+                                </a>
+                                
+                                <form asp-action="Delete" asp-route-id="@item.Id" method="post" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this product?');">
+                                    <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

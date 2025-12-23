@@ -1,0 +1,20 @@
+1. Dirty Read - means reading the data that is changed in undergoing transaction, but may
+    be rolled back later
+    Example:
+    If Employee 1 is starting a transaction that will change the price of a product
+    with an ID = 101, and employee 2 will read the price of this product while the 
+    transaction is undergoing, he will read the new price which could be rolled back
+    because some error occured later in the transaction of an employee 1
+
+2. Non-Repeatable Read - happens when in the same transaction we have a read of the same
+    row twice but it gives different result because between the two reads a different 
+    transaction changes the row value 
+    Example:
+    Employee 1 reads the company name of customer 101 for the first time, and before
+    he does it again, Employee 2 updates his company name and commits his transaction
+
+3. Phantom Read - occurs when a transaction works on the same set twice but reads 
+    different amount of rows the second time 
+    Example:
+    Employee 1 select the count of customers from a company Amazon, and before he does it 
+    again, Employee 2 adds a new customer from Amazon

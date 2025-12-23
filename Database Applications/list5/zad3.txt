@@ -1,0 +1,21 @@
+Q1:
+SELECT DISTINCT c.PESEL, c.Nazwisko
+FROM Egzemplarz e
+JOIN Ksiazka k ON e.Ksiazka_ID=k.Ksiazka_ID
+JOIN Wypozyczenie w ON e.Egzemplarz_ID=w.Egzemplarz_ID
+JOIN Czytelnik c ON c.Czytelnik_ID = w.Czytelnik_ID;
+
+------------------------------
+Q2:
+SELECT c.PESEL, c.Nazwisko
+FROM Czytelnik c WHERE c.Czytelnik_ID IN (
+SELECT w.Czytelnik_ID FROM Wypozyczenie w WHERE w.Egzemplarz_ID IN (
+SELECT e.Egzemplarz_ID FROM Egzemplarz e WHERE e.Ksiazka_ID IN (
+SELECT k.Ksiazka_ID FROM Ksiazka k)))
+
+---------------------------
+W Q1 wybieramy unikalnych (za pomoca DISTINCT) czytelników (ich pesel i nazwisko), 
+którzy wypozyczyli ksiazki z tabeli Egzemplarz
+
+W Q2 wypisujemy to samo, ale unikalnosc czytelnikow jest gwarantowana tak ze bierzemy 
+ich z tablicy Czytelnicy w ktorej raczej na pewno sa oni unikalni

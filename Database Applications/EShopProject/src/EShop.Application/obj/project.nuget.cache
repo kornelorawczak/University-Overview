@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4s8r5t04alk=",
+  "success": true,
+  "projectFilePath": "/Users/kornelorawczak/Documents/studia/sem5/DBcourse/lista8/EShopProject/src/EShop.Application/EShop.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/kornelorawczak/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.1/microsoft.extensions.dependencyinjection.abstractions.10.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

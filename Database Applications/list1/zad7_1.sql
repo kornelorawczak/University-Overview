@@ -1,0 +1,4 @@
+CREATE TABLE dbo.Test (
+    ID INT IDENTITY(1000, 10) PRIMARY KEY,
+    Value NVARCHAR(50)
+);
