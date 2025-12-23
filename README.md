@@ -45,5 +45,6 @@ This repository documents my completed academic coursework during my studies in 
 - **Machine Learning**
 - **AI Security Seminar**
 - **AI Workshop**
+- **Group Project: Scheduler Development**
 - **Computer Graphics Course**
 - **Databases in Applications**
