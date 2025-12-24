@@ -48,3 +48,4 @@ This repository documents my completed academic coursework during my studies in 
 - **Group Project: Scheduler Development** (This project is ongoing - the repository is as of now private)
 - [**Computer Graphics Course**](https://github.com/kornelorawczak/Computer-Graphics-Course)
 - [**Databases in Applications**](https://github.com/kornelorawczak/University-Overview/tree/main/Database%20Applications)
+- **Methods for Implementing Algorithms** (Weekly codeforces contests)
